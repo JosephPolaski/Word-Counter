@@ -67,6 +67,10 @@ class TestLinkedList(unittest.TestCase):
         # remove first element
         test_list.remove('runs')
 
+        # test list size
+        self.assertEqual(test_list.size, 1)
+        self.assertIsNone(test_list.fetch_node('runs'))
+
 
 if __name__ == "__main__":
     unittest.main()

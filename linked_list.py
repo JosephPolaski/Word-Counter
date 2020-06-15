@@ -10,6 +10,11 @@ class Node:
     """This class represents a node in the LinkedList Class"""
 
     def __init__(self, key, value):
+        """
+        Creates a new Node object
+        :param key: this will be a string type variable representing a word in the words.txt file
+        :param value: this will be an integer variable representing the number of instances of the key in the .txt file
+        """
         # data members
         self.key = key
         self.value = value
@@ -82,7 +87,7 @@ class LinkedList:
 
         # best case: first element is a match
         if self.head.key == key:
-            self.head = self.head
+            self.head = self.head.next
             self.size -= 1
             return True
 
