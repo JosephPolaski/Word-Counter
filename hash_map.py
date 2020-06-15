@@ -31,7 +31,16 @@ class HashMap:
             self.__buckets.append(LinkedList())
 
     def __str__(self):
-        """Overrides the default __str__ method """
+        """
+        Prints all the links in each of the buckets in the table.
+        """
+
+        out = ""
+        index = 0
+        for bucket in self.__buckets:
+            out = out + str(index) + ': ' + str(bucket) + '\n'
+            index = index + 1
+        return out
 
     def clear(self):
         """
