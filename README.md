@@ -6,6 +6,4 @@ The hash map uses chaining via a linked list to avoid collisions.
 For now this is the complete version but I would like to add further functionality to it in the future as time permits.
 
 ---------------
-**Potential Future additions might include:**
-* a graph generated with matplot lib
-* a front end gui 
+
